@@ -1,15 +1,15 @@
+import { BrowserRouter } from "react-router-dom";
+import { Router } from './router/index'
 
-import { HashRouter } from "react-router-dom";
-import Router from './router/index'
 
-import "./App.css";
+
 
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Router />
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
