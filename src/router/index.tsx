@@ -13,37 +13,32 @@ const routes = [
     name: '主页',
     children: [
       {
-        path: '/dashboard', element: <Dashboard />,
+        path: 'dashboard',
+        element: <Dashboard />,
         name: '首页'
       },
     ],
   },
   {
-    path: '',
+    path: 'my',
     element: <Layout />,
     name: '个人中心',
     children: [
       {
-        path: 'my',
-
+        path: 'home',
         name: '个人中心',
         children: [
           {
-            path: 'home',
-            children: [
-              {
-                path: "page1",
-                element: (<div> this is page 2</div>)
-              }
-            ]
+            path: "",
+            element: <Home />
           },
+          {
+            path: "page1",
+            element: (<div> this is page 2</div>)
+          }
         ]
-      }
+      },
     ]
-  },
-  {
-    path: '/login',
-    element: <Login />
   }
 ];
 
