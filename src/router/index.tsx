@@ -1,9 +1,9 @@
-import Dashboard from '../views/Dashboard';
-import Login from '../views/Login';
-import My from '../views/My/index';
-import Layout from '../layout/index';
 import { useRoutes } from 'react-router-dom';
-import Home from '../views/Home';
+import Dashboard from '@/views/Dashboard';
+import Login from '@/views/Login';
+import My from '@/views/My/index';
+import Layout from '@/layout/index';
+import Home from '@/views/Home';
 
 
 const routes = [
@@ -38,9 +38,18 @@ const routes = [
           }
         ]
       },
+      {
+        path: "",
+        element: <My />
+      }
     ]
+  },
+  {
+    path: 'login',
+    element: <Login />
   }
 ];
+
 
 
 function Router() {
